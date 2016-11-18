@@ -1,0 +1,21 @@
+{
+  "name": "gcmd-keywords",
+  "homepage": "https://github.com/adiwg/gcmd-keywords",
+  "authors": [
+    "Josh Bradley <jbradley@arcticlcc.org>"
+  ],
+  "description": "JSON-formatted Global Change Master Directory (GCMD) Keywords",
+  "main": "index.js",
+  "keywords": [
+    "gcmd",
+    "keywords"
+  ],
+  "license": "GPL-3.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
