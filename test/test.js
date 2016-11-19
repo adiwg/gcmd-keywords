@@ -5,14 +5,19 @@ describe('GCMD', function () {
     GCMD = require('../index.js');
   });
 
-  describe('#isoTopicCategory', function () {
+  describe('#platforms', function () {
     it('should return an array', function () {
-      assert.ok(Array.isArray(GCMD.isoTopicCategory));
+      assert.ok(Array.isArray(GCMD.platforms));
     });
   });
   describe('#scienceKeywords', function () {
     it('should return an array', function () {
       assert.ok(Array.isArray(GCMD.scienceKeywords));
+    });
+  });
+  describe('#instruments', function () {
+    it('should return an array', function () {
+      assert.ok(Array.isArray(GCMD.instruments));
     });
   });
 });

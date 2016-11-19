@@ -19,16 +19,19 @@
   'use strict';
 
   // imports
-  var isoTopicCategory = (typeof require == 'function') ? require(
-    './lib/js/isotopiccategory') : window.isotopiccategory;
   var sk = (typeof require == 'function') ? require(
     './lib/js/sciencekeywords') : window.sciencekeywords;
+  var pl = (typeof require == 'function') ? require(
+    './lib/js/platforms') : window.platforms;
+  var ins = (typeof require == 'function') ? require(
+    './lib/js/instruments') : window.instruments;
 
   var GCMD = {
-    isoTopicCategory: isoTopicCategory,
-    scienceKeywords: sk
+    scienceKeywords: sk,
+    platforms: pl,
+    instruments: ins
   };
-  
+
   // exports
   return GCMD;
 
