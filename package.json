@@ -1,11 +1,11 @@
 {
   "name": "gcmd-keywords",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "'JSON-formatted Global Change Master Directory (GCMD) Keywords'",
   "main": "index.js",
   "scripts": {
     "prepublish": "scripts/prepublish.js",
-    "test": "mocha",    
+    "test": "mocha",
     "pretest": "scripts/prepublish.js"
   },
   "repository": {
