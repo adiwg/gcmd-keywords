@@ -1,4 +1,6 @@
 # gcmd-keywords
+[![NPM Version][npm-image]][npm-url] [![Linux Build][travis-image]][travis-url]
+
 JSON-formatted Global Change Master Directory (GCMD) Keywords
 
 ## About
@@ -39,8 +41,6 @@ but not included in the JSON.
 
 ## Citation
 > Global Change Master Directory (GCMD). 2016. GCMD Keywords, Version 8.4. Greenbelt, MD: Global Change Data Center, Science and Exploration Directorate, Goddard Space Flight Center (GSFC) National Aeronautics and Space Administration (NASA). URL (GCMD Keyword Forum Page): [http://earthdata.nasa.gov/gcmd-forum](http://earthdata.nasa.gov/gcmd-forum)
-
-[![NPM Version][npm-image]][npm-url] [![Linux Build][travis-image]][travis-url]
 
 ## Install
 ### nodejs
@@ -86,5 +86,5 @@ $.ajax({
 
 [npm-image]: https://img.shields.io/npm/v/gcmd-keywords.svg
 [npm-url]: https://npmjs.org/package/gcmd-keywords
-[travis-image]: https://img.shields.io/travis/live-js/gcmd-keywords/master.svg
-[travis-url]: https://travis-ci.org/live-js/gcmd-keywords
+[travis-image]: https://img.shields.io/travis/adiwg/gcmd-keywords/master.svg
+[travis-url]: https://travis-ci.org/adiwg/gcmd-keywords
