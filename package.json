@@ -4,9 +4,9 @@
   "description": "'JSON-formatted Global Change Master Directory (GCMD) Keywords'",
   "main": "index.js",
   "scripts": {
-    "prepublish": "scripts/prepublish.js",
+    "prepublish": "npm test",
     "test": "mocha",
-    "pretest": "scripts/prepublish.js"
+    "pretest": "scripts/pretest.js"
   },
   "repository": {
     "type": "git",
