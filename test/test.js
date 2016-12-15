@@ -20,4 +20,10 @@ describe('GCMD', function () {
       assert.ok(Array.isArray(GCMD.instruments));
     });
   });
+  describe('#version', function () {
+    it('should return a string', function () {
+      var v = GCMD.version;
+      assert.ok(!!v && typeof v === 'string' || v instanceof String);
+    });
+  });
 });
