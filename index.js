@@ -27,7 +27,10 @@
     './lib/js/instruments') : window.instruments;
 
   var GCMD = {
-    version: '8.4',
+    version: {
+      edition: '8.4',
+      date: '2016-08-10'
+    },
     scienceKeywords: sk,
     platforms: pl,
     instruments: ins
