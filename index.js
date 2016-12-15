@@ -1,5 +1,3 @@
-var pkginfo = require('pkginfo')(module, 'version');
-
 /**
  * @module GCMD
  */
@@ -29,7 +27,7 @@ var pkginfo = require('pkginfo')(module, 'version');
     './lib/js/instruments') : window.instruments;
 
   var GCMD = {
-    version: pkginfo.version,
+    version: '8.4',
     scienceKeywords: sk,
     platforms: pl,
     instruments: ins
