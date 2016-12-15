@@ -18,11 +18,13 @@
     "url": "https://github.com/adiwg/gcmd-keywords/issues"
   },
   "homepage": "https://github.com/adiwg/gcmd-keywords#readme",
+  "dependencies": {
+    "pkginfo": "^0.4.0"
+  },
   "devDependencies": {
     "buildify": "^0.4.0",
     "glob": "^7.1.1",
     "mocha": "^3.1.2",
-    "rimraf": "^2.5.4",
-    "pkginfo": "^0.4.0"
+    "rimraf": "^2.5.4"
   }
 }
