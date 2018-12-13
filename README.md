@@ -49,12 +49,6 @@ but not included in the JSON.
 npm install gcmd-keywords
 ```
 
-### bower
-
-```bash
-bower install gcmd-keywords
-```
-
 ## Test
 
 ```bash
