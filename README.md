@@ -40,7 +40,7 @@ but not included in the JSON.
 ```
 
 ## Citation
-> Global Change Master Directory (GCMD). 2016. GCMD Keywords, Version 8.4. Greenbelt, MD: Global Change Data Center, Science and Exploration Directorate, Goddard Space Flight Center (GSFC) National Aeronautics and Space Administration (NASA). URL (GCMD Keyword Forum Page): [http://earthdata.nasa.gov/gcmd-forum](http://earthdata.nasa.gov/gcmd-forum)
+> Global Change Master Directory (GCMD). 2018. GCMD Keywords, Version 8.6. Greenbelt, MD: Global Change Data Center, Science and Exploration Directorate, Goddard Space Flight Center (GSFC) National Aeronautics and Space Administration (NASA). URL (GCMD Keyword Forum Page): [http://earthdata.nasa.gov/gcmd-forum](http://earthdata.nasa.gov/gcmd-forum)
 
 ## Install
 ### nodejs
@@ -68,7 +68,7 @@ npm test
 //all lists
 var gcmd = require ('gcmd-keywords');
 //single lists
-var sciencekeywords = require ('gcmd-keywords/lib/js/sciencekeywords');
+var sciencekeywords = require ('gcmd-keywords/resources/json/sciencekeywords.json');
 ```
 
 ### POJO (jQuery)

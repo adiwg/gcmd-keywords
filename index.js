@@ -1,42 +1,23 @@
+'use strict'
+
+Object.defineProperty(exports, '__esModule', { value: true })
+
+var instruments = require('./resources/json/instruments.json')
+var platforms = require('./resources/json/platforms.json')
+var sciencekeywords = require('./resources/json/sciencekeywords.json')
+
 /**
- * @module GCMD
+ * @module mdkeywords
  */
 
-(function (name, context, definition) {
-  if(typeof exports == 'object') {
-    module.exports = definition(require);
-  } else if(typeof define == 'function' && define.amd) {
-    define(definition);
-  } else if(typeof YUI == "function") {
-    YUI.add(name, definition, '@VERSION@', {
-      requires: []
-    });
-  } else {
-    context[name] = definition();
-  }
-})
-.call(this, 'GCMD', this, function (require) {
-  'use strict';
+var GCMD = {
+  version: {
+    edition: '8.6',
+    date: '2018-12-12'
+  },
+  scienceKeywords: sciencekeywords,
+  platforms: platforms,
+  instruments: instruments
+}
 
-  // imports
-  var sk = (typeof require == 'function') ? require(
-    './lib/js/sciencekeywords') : window.sciencekeywords;
-  var pl = (typeof require == 'function') ? require(
-    './lib/js/platforms') : window.platforms;
-  var ins = (typeof require == 'function') ? require(
-    './lib/js/instruments') : window.instruments;
-
-  var GCMD = {
-    version: {
-      edition: '8.4',
-      date: '2016-08-10'
-    },
-    scienceKeywords: sk,
-    platforms: pl,
-    instruments: ins
-  };
-
-  // exports
-  return GCMD;
-
-});
+exports.GCMD = GCMD

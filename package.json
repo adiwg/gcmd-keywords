@@ -1,17 +1,25 @@
 {
   "name": "gcmd-keywords",
-  "version": "8.4.4",
+  "version": "8.6.0",
   "description": "'JSON-formatted Global Change Master Directory (GCMD) Keywords'",
   "main": "index.js",
+  "module": "src/main.js",
+  "browser": "dist/mdkeywords.umd.js",
   "scripts": {
-    "prepublish": "npm test",
-    "pretest": "scripts/pretest.js",
-    "test": "mocha"
+    "prepublishOnly": "npm test",
+    "pretest": "rollup -c",
+    "test": "mocha",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adiwg/gcmd-keywords.git"
   },
+  "files": [
+    "resources",
+    "src",
+    "dist"
+  ],
   "author": "jbradley@arcticlcc.org",
   "license": "GPL-3.0",
   "bugs": {
@@ -19,9 +27,19 @@
   },
   "homepage": "https://github.com/adiwg/gcmd-keywords#readme",
   "devDependencies": {
-    "buildify": "^0.4.0",
-    "glob": "^7.1.1",
-    "mocha": "^3.1.2",
-    "rimraf": "^2.5.4"
+    "eslint": "^5.10.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.1.1",
+    "rollup": "^0.67.4",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "dependencies": {
+    "rollup-plugin-terser": "^3.0.0"
   }
 }
